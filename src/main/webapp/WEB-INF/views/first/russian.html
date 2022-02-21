@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>My translate RE</title>
+</head>
+<body>
+<h2> Enter word: </h2>
+<form method="post" action="/first/answer">
+    <table>
+        <tr>
+            <td><label path="tapRussian">Field</label></td>
+            <td><input type="text" name="tapRussian" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Translate"/>
+            </td>
+        </tr>
+    </table>
+</form>
+<a href="/second/english">ENG</a>
+</body>
+</html>

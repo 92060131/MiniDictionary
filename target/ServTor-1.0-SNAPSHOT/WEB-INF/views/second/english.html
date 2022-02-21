@@ -1,0 +1,50 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Translate from english to russian</title>-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+<!--</head>-->
+<!--<body background-color="#aaccff">-->
+<!--<span color="green" size="10">-->
+<!--    Форма для работы со словарем-->
+<!--</span>-->
+<!--<br>-->
+<!--<br>-->
+<!--<form name="frm" method="Get" action="MyServlet">-->
+<!--    <span color="blue" size="6">Cлово:</span><Input type="text" name="inputWord" value=""/>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <span style="color: #ff00ea; font-size: x-large; ">Перевод: </span><input type="text" name ="trans" value="" disabled /><br>-->
+<!--    <h4>Кликни здесь для получения перевода :<Input type="submit" value="Перевести"/>-->
+<!--    </h4>-->
+<!--</form>-->
+<!--<a href="/first/russian" >RUS</a>-->
+<!--</body>-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>My translate ER</title>
+</head>
+<body >
+
+<h2> Enter word: </h2>
+<form method="post" action="answer">
+    <table>
+        <tr>
+            <td>
+                <label path="tapEnglish">Field</label>
+            </td>
+            <td><input type="text" name="tapEnglish" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Translate"/>
+            </td>
+        </tr>
+    </table>
+</form>
+<a href="/first/russian">RUS</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hi There</title>
+</head>
+<body>
+<p th:text="${mySender}"/>
+<table>
+    <tr>
+        <th>Value</th>
+    </tr>
+    <th:block th:each="mes : ${answer}">
+        <tr>
+            <td th:text="${mes.word_english}"></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+<a href="/second/english">ENG</a> or <a href="/first/russian">RUS</a>
+</html>
